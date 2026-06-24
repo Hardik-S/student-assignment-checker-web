@@ -57,4 +57,19 @@ Operator: Codex on Hardik's local Windows workspace
 
 ## Deployment Log
 
-Pending.
+- GitHub repo created and pushed:
+  - `https://github.com/Hardik-S/student-assignment-checker-web`
+  - initial commit: `159029d`
+- Vercel link:
+  ```powershell
+  vercel link --yes --project student-assignment-checker-web --scope batb4016-9101s-projects
+  ```
+- Vercel production deploy:
+  ```powershell
+  vercel --prod --yes --scope batb4016-9101s-projects
+  ```
+- Deployment ID: `dpl_DcGZqoNaL6cTL5Dv1Q6vfmpWVq5R`
+- Production alias: `https://student-assignment-checker-web.vercel.app`
+- Verification:
+  - `vercel inspect https://student-assignment-checker-web.vercel.app --scope batb4016-9101s-projects` -> status `Ready`
+  - `Invoke-WebRequest https://student-assignment-checker-web.vercel.app` -> HTTP `200`, expected page title found

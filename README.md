@@ -42,7 +42,7 @@ vercel link --yes --project student-assignment-checker-web
 vercel --prod --yes
 ```
 
-Live URL: _added after deployment_
+Live URL: [https://student-assignment-checker-web.vercel.app](https://student-assignment-checker-web.vercel.app)
 
 ## Repeatable Build Notes
 
