@@ -68,8 +68,9 @@ Operator: Codex on Hardik's local Windows workspace
   ```powershell
   vercel --prod --yes --scope batb4016-9101s-projects
   ```
-- Deployment ID: `dpl_DcGZqoNaL6cTL5Dv1Q6vfmpWVq5R`
+- Initial CLI deployment ID: `dpl_DcGZqoNaL6cTL5Dv1Q6vfmpWVq5R`
 - Production alias: `https://student-assignment-checker-web.vercel.app`
 - Verification:
   - `vercel inspect https://student-assignment-checker-web.vercel.app --scope batb4016-9101s-projects` -> status `Ready`
   - `Invoke-WebRequest https://student-assignment-checker-web.vercel.app` -> HTTP `200`, expected page title found
+- Note: after GitHub was connected, each push to `main` created a new Vercel production deployment ID. Treat the alias as the stable student-facing URL and run `vercel inspect` when the exact current deployment ID matters.
